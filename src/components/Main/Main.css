@@ -1,0 +1,28 @@
+.Main {
+  width: 90%;
+
+
+}
+.Main ul {
+  margin: 0;
+  padding: 10px;
+  width: 80%;
+  
+}
+
+.Main li {
+  list-style: none;
+  display: inline-block;
+ 
+}
+
+.addNote-button {
+  color: white;
+  background-color: gray;
+  border: none;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 10px;
+}

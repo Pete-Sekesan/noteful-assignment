@@ -1,0 +1,39 @@
+
+.App-link {
+  color: #61dafb;
+}
+
+main {
+  display: flex;
+  width: 90%;
+  
+}
+
+.App {
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-areas: "sidebar header" "sidebar main";
+  grid-template-columns: 1fr 2.3fr;
+  grid-template-rows: 120px 1fr;
+  min-height: 100vh;
+}
+
+.App__sidebar {
+  color: #fff;
+  grid-area: sidebar;
+  height: 100vh;
+  overflow: auto;
+}
+
+.App__header {
+  color: #bdbdbd;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-left: 16px;
+  padding-top: 32px;
+  margin: 0px 30px;
+}
+
+.App__header a {
+  color: #2b2d42;
+  text-decoration: none;
+}
