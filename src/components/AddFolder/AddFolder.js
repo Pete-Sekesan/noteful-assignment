@@ -77,7 +77,7 @@ class AddFolder extends React.Component {
           />
 
           <button type="submit-button" disabled={this.validateName()}>
-            Submit
+            Add
           </button>
           <ValidationError message={nameError} />
         </form>

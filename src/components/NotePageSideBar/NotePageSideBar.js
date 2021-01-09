@@ -27,7 +27,7 @@ class NotePageSideBar extends React.Component {
           className="NotePageNav_back-button"
           onClick={() => this.props.history.goBack()}
         >
-          Back
+          Go Back
         </button>
         {folder && <h3 className="NotePageNav_folder-name">{folder.name}</h3>}
       </div>

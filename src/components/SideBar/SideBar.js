@@ -40,7 +40,7 @@ class SideBar extends React.Component {
         </ul>
         <div className="button-container">
           <Link className="addFolder-button" to="/add-folder">
-            Add Folder
+            New Folder
           </Link>
         </div>
       </div>

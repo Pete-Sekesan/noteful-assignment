@@ -91,10 +91,10 @@ class AddNote extends React.Component {
 
     return (
       <div className="AddNote">
-        <h2> Add Note </h2>
+        <h2> Create Note </h2>
         <form className="AddNote-form" onSubmit={this.handleSubmit}>
           <div className="flex-name">
-            <label htmlFor="AddNote-name">Name: </label>
+            <label htmlFor="AddNote-name">Title: </label>
             <input
               required
               type="text"
@@ -106,7 +106,7 @@ class AddNote extends React.Component {
           </div>
 
           <div className="flex-content">
-            <label htmlFor="AddNote-content">Content: </label>
+            <label htmlFor="AddNote-content">Body: </label>
             <input
               required
               type="text"
@@ -124,7 +124,7 @@ class AddNote extends React.Component {
               name="AddNote-folder"
               onChange={(e) => this.updateFolder(e.target.value)}
             >
-              <option value={""}>Please select a folder</option>
+              <option value={""}>Choose a folder</option>
               {folders.map((folder) => (
                 <option key={folder.id} value={folder.id}>
                   {folder.name}
@@ -137,7 +137,7 @@ class AddNote extends React.Component {
 
           <div className="AddNote-button-container">
             <button type="submit" disabled={this.validateName()}>
-              Submit
+              Add
             </button>
           </div>
           {this.state.name.touched && <ValidationError message={nameError} />}

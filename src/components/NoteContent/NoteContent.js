@@ -49,7 +49,7 @@ class NoteContent extends React.Component {
           Delete
         </button>
         <div className="noteContent-modified">
-          Modified {new Date(modified).toLocaleString()}
+          Updated {new Date(modified).toLocaleString()}
         </div>
       </div>
     );
